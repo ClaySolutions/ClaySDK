@@ -19,11 +19,11 @@ This SDK for iOS contains the most up-to-date frameworks for integrating Mobile 
 ```swift
 import ClaySDK
 //...
-'self' must conform to ClayDelegate, the apiKey will be provided to you
+//'self' must conform to ClayDelegate, the apiKey will be provided to you
 let clay = ClaySDK(installationUID: "SOME_UNIQUE_ID", apiKey: "THE_API_PUBLIC_KEY", delegate: self)
 let publicKey = clay.getPublicKey()
 //...
-'yourOpenDoorDelegate' must conform to OpenDoorDelegate
+//'yourOpenDoorDelegate' must conform to OpenDoorDelegate
 clay.openDoor(with: "your-encrypted-key", delegate: yourOpenDoorDelegate)
 ```
 
@@ -57,7 +57,7 @@ The Virgil libraries can be found at [Virgil Security Objective-C/Swift SDK](htt
 To install ClaySDK, simply add the following line to your Podfile:
 
 ```ruby
-pod 'ClaySDK', '~> 1.0'
+pod 'ClaySDK', '~> 1.5'
 ```
 
 ### Carthage
