@@ -38,11 +38,11 @@ Apart from that, these frameworks must be included into the target project:
 - SaltoJustINMobile.framework
 - CoreBluetooth.framework
 - Foundation.framework
-- VirgilCrypto.framework
-- VirgilCryptoAPI.framework
-- VirgilCryptoApiImpl.framework
-- VirgilSDK.framework
-- VSCCrypto.framework
+- VirgilSDK
+- VirgilCrypto
+- VirgilCryptoFoundation
+- VSCCommon
+- VSCFoundation
 
 ## Installation
 
@@ -57,7 +57,7 @@ The Virgil libraries can be found at [Virgil Security Objective-C/Swift SDK](htt
 To install ClaySDK, simply add the following line to your Podfile:
 
 ```ruby
-pod 'ClaySDK', '~> 1.5'
+pod 'ClaySDK', '~> 1.6'
 ```
 
 ### Carthage
@@ -67,10 +67,10 @@ pod 'ClaySDK', '~> 1.5'
 To install ClaySDK, simply add the following line to your Cartfile:
 
 ```ogdl
-github "ClaySolutions/ClaySDK" ~> 1.5.4
+github "ClaySolutions/ClaySDK" ~> 1.6.0
 ```
 Include framework from *Carthage/Build/iOS* folder. 
-Follow instructions for including [VirgilSDK](https://github.com/VirgilSecurity/virgil-sdk-x/tree/5.7.0#carthage)
+Follow instructions for including [VirgilSDK](https://github.com/VirgilSecurity/virgil-sdk-x/tree/7.1.0#carthage)
 
 ## Author
 

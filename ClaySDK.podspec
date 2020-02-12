@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'ClaySDK'
-  s.version          = '1.5.4'
+  s.version          = '1.6.0'
   s.summary          = 'The Clay mobile SDK make it easy to build a seamless door opening experience in your application.'
 
   s.description      = <<-DESC
@@ -23,6 +23,5 @@ Pod::Spec.new do |s|
   s.ios.deployment_target = '9'
 
   s.vendored_frameworks = 'ClaySDK.framework'
-  s.dependency 'VirgilCryptoApiImpl', '3.2.3'
-  s.dependency 'VirgilSDK', '5.7.0'
+  s.dependency 'VirgilSDK', '7.1.0'
 end
