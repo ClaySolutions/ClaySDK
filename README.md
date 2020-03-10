@@ -57,7 +57,7 @@ The Virgil libraries can be found at [Virgil Security Objective-C/Swift SDK](htt
 To install ClaySDK, simply add the following line to your Podfile:
 
 ```ruby
-pod 'ClaySDK', '~> 1.6'
+pod 'ClaySDK', '~> 1.7'
 ```
 
 ### Carthage
@@ -67,7 +67,7 @@ pod 'ClaySDK', '~> 1.6'
 To install ClaySDK, simply add the following line to your Cartfile:
 
 ```ogdl
-github "ClaySolutions/ClaySDK" ~> 1.6.0
+github "ClaySolutions/ClaySDK" ~> 1.7.0
 ```
 Include framework from *Carthage/Build/iOS* folder. 
 Follow instructions for including [VirgilSDK](https://github.com/VirgilSecurity/virgil-sdk-x/tree/7.1.0#carthage)
