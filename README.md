@@ -29,7 +29,7 @@ clay.openDoor(with: "your-encrypted-key", delegate: yourOpenDoorDelegate)
 
 ## Requirements
 
-* iOS 9.1+
+* iOS 11+
 * Xcode 11.3
 * Swift 5.1.3
 
