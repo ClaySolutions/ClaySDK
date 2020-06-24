@@ -30,7 +30,7 @@ clay.openDoor(with: "your-encrypted-key", delegate: yourOpenDoorDelegate)
 ## Requirements
 
 * iOS 11+
-* Xcode 11.4
+* Xcode 11.5
 * Swift 5.2
 
 Apart from that, these frameworks must be included into the target project:
@@ -67,7 +67,7 @@ pod 'ClaySDK', '~> 1.7'
 To install ClaySDK, simply add the following line to your Cartfile:
 
 ```ogdl
-github "ClaySolutions/ClaySDK" "1.7.2"
+github "ClaySolutions/ClaySDK" "1.7.3"
 ```
 Include framework from *Carthage/Build/iOS* folder. 
 Follow instructions for including [VirgilSDK](https://github.com/VirgilSecurity/virgil-sdk-x/tree/7.1.0#carthage)
