@@ -187,6 +187,7 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #pragma clang diagnostic ignored "-Watimport-in-framework-header"
 #endif
 @import ObjectiveC;
+@import SaltoJustINMobileSDK;
 #endif
 
 #pragma clang diagnostic ignored "-Wproperty-attribute-mismatch"
@@ -214,26 +215,80 @@ SWIFT_PROTOCOL("_TtP7ClaySDK12ClayDelegate_")
 - (void)didReceiveWithError:(NSError * _Nonnull)error;
 @end
 
+
 /// <code>ClayResult</code> is the result returned by the <code>openDoor(with:delegate:)</code> method
 /// <ul>
 ///   <li>
-///     unknown: Unknown result
-///   </li>
-///   <li>
-///     mkeyDelivered: Access to the door is granted
-///   </li>
-///   <li>
-///     mkeyFailed: Access to the door is denied
+///     Example on how to use:
 ///   </li>
 /// </ul>
-typedef SWIFT_ENUM(NSInteger, ClayResult, closed) {
-/// Unknown result
-  ClayResultUnknown = 0,
-/// The Mobile Key was devilvered to the lock successfully
-  ClayResultMkeyDelivered = 1,
-/// The Mobile Key devilvery to the lock failed
-  ClayResultMkeyFailed = 2,
-};
+/// \code
+/// import SaltoJustINMobileSDK
+/// //...
+/// func didOpen(with result: ClayResult?) {
+///    guard let result = result else { return }
+///    if (result.getOpResult() == AUTH_SUCCESS_ACCESS_GRANTED) {
+///        // access granted
+///    }
+///    // or by using SSOperationGrup
+///    let group = SSOpResult.getGroup(result.getOpResult())
+///    switch group {
+///    case .groupAccepted: // success
+///        break
+///    case .groupFailure, .groupRejected, .groupUnknownResult:
+///        break
+///    default:
+///        break
+///    }
+/// }
+///
+/// \endcodeList of authentication operation results.
+/// <code>SSOpResult</code> can be one of:
+/// \code
+///   // Successful authentication but no information about the operation result.
+///   extern unsigned char const AUTH_SUCCESS_UNKNOWN_RESULT
+///   // Successful authentication and access granted (lock opened).
+///   extern unsigned char const AUTH_SUCCESS_ACCESS_GRANTED
+///   // Successful authentication and access rejected.
+///   extern unsigned char const AUTH_SUCCESS_ACCESS_REJECTED
+///   // Successful authentication and door opened with office mode set.
+///   extern unsigned char const AUTH_SUCCESS_DOOR_IN_OFFICE
+///   // Successful authentication and door closed with office mode removed.
+///   extern unsigned char const AUTH_SUCCESS_END_OFFICE
+///   // Successful authentication and opening roller.
+///   extern unsigned char const AUTH_SUCCESS_OPENING_ROLLER
+///   // Successful authentication and closing roller.
+///   extern unsigned char const AUTH_SUCCESS_CLOSING_ROLLER
+///   // Successful authentication and stop roller.
+///   extern unsigned char const AUTH_SUCCESS_STOP_ROLLER
+///   // Successful authentication and waiting for a second valid key for opening.
+///   extern unsigned char const AUTH_SUCCESS_WAIT_SECOND_CARD
+///   // Successful authentication, access rejected, PIN required. Introduce PIN before key.
+///   extern unsigned char const AUTH_SUCCESS_PIN_REQUIRED
+///   // Successful authentication, access rejected and key should be deleted.
+///   extern unsigned char const AUTH_SUCCESS_CANCELLED_KEY
+///   // Successful authentication, access rejected, fingerprint required. Input fingerprint before key.
+///   extern unsigned char const AUTH_SUCCESS_FINGER_REQUIRED
+///   // Successful authentication, key data was processed successfully. Doesn't imply any further outcome.
+///   extern unsigned char const AUTH_SUCCESS_KEY_PROCESSED
+///
+/// \endcode<code>SSOpResultGroup</code> can be one of:
+/// typedef NS_ENUM(NSInteger, SSOpResultGroup) {
+/// kGroupUnknownResult,
+/// kGroupFailure,
+/// kGroupAccepted,
+/// kGroupRejected
+/// };
+SWIFT_CLASS("_TtC7ClaySDK10ClayResult")
+@interface ClayResult : SSResult
+/// Authentication operation result
+///
+/// returns:
+/// Result code. One of <code>SSOpResult</code> codes.
+- (NSInteger)getOpResult SWIFT_WARN_UNUSED_RESULT;
+- (nullable instancetype)initWithOpResult:(NSInteger)opResult auditTrailEvents:(NSString * _Nullable)events OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
 
 @protocol OpenDoorDelegate;
 
@@ -275,7 +330,9 @@ SWIFT_PROTOCOL("_TtP7ClaySDK16OpenDoorDelegate_")
 /// Lock found handler
 - (void)didFindLock;
 /// Open handler
-- (void)didOpenWith:(enum ClayResult)result;
+/// \param result <code>ClayResult</code>
+///
+- (void)didOpenWith:(ClayResult * _Nullable)result;
 /// Timeout handler
 - (void)didReceiveTimeout;
 /// MKey process already running

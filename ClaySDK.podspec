@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'ClaySDK'
-  s.version          = '1.7.3'
+  s.version          = '1.8.0'
   s.summary          = 'The Clay mobile SDK make it easy to build a seamless door opening experience in your application.'
 
   s.description      = <<-DESC

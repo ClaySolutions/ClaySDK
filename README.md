@@ -6,26 +6,11 @@
 <a href="https://raw.githubusercontent.com/jakov-clay/ClaySDK/master/LICENSE"><img src="http://img.shields.io/badge/license-MIT-blue.svg?style=flat" alt="License: MIT" /></a>
 </p>
 
-By [ClaySolutions](https://my-clay.com/).
+By [Salto KS](https://saltoks.com/).
 
 ## Introduction
 
 This SDK for iOS contains the most up-to-date frameworks for integrating Mobile Key technology into your own iOS applications. It will setup the necessary security to communicate with Connect API, and unlock locks with encrypted Mobile Keys returned by the Connect API. The SDK for iOS includes iOS libraries, developer documentation and a sample Xcode project to get you up and running quickly and easily.
-
-<!-- <img src="Example/ClaySDK.gif" width="300"/> -->
-
-## Usage
-
-```swift
-import ClaySDK
-//...
-//'self' must conform to ClayDelegate, the apiKey will be provided to you
-let clay = ClaySDK(installationUID: "SOME_UNIQUE_ID", apiKey: "THE_API_PUBLIC_KEY", delegate: self)
-let publicKey = clay.getPublicKey()
-//...
-//'yourOpenDoorDelegate' must conform to OpenDoorDelegate
-clay.openDoor(with: "your-encrypted-key", delegate: yourOpenDoorDelegate)
-```
 
 ## Requirements
 
@@ -57,7 +42,7 @@ The Virgil libraries can be found at [Virgil Security Objective-C/Swift SDK](htt
 To install ClaySDK, simply add the following line to your Podfile:
 
 ```ruby
-pod 'ClaySDK', '~> 1.7'
+pod 'ClaySDK', '~> 1.8'
 ```
 
 ### Carthage
@@ -67,10 +52,46 @@ pod 'ClaySDK', '~> 1.7'
 To install ClaySDK, simply add the following line to your Cartfile:
 
 ```ogdl
-github "ClaySolutions/ClaySDK" "1.7.3"
+github "ClaySolutions/ClaySDK" "1.8.0"
 ```
 Include framework from *Carthage/Build/iOS* folder. 
 Follow instructions for including [VirgilSDK](https://github.com/VirgilSecurity/virgil-sdk-x/tree/7.1.0#carthage)
+
+## Usage
+
+```swift
+import ClaySDK
+//...
+//'self' must conform to ClayDelegate, the apiKey will be provided to you
+let clay = ClaySDK(installationUID: "SOME_UNIQUE_ID", apiKey: "THE_API_PUBLIC_KEY", delegate: self)
+//...
+// Public key that you need to send via API to activate mobile key
+let publicKey = clay.getPublicKey()
+//...
+//'yourOpenDoorDelegate' must conform to OpenDoorDelegate
+clay.openDoor(with: "your-encrypted-key", delegate: yourOpenDoorDelegate)
+```
+Inside OpenDoorDelegate implementation ClayResult can be handled
+```
+import SaltoJustINMobileSDK
+//...
+func didOpen(with result: ClayResult?) {
+    guard let result = result else { return }
+    if (result.getOpResult() == AUTH_SUCCESS_ACCESS_GRANTED) {
+        // access granted
+    }
+    // or by using SSOperationGrup
+    let group = SSOpResult.getGroup(result.getOpResult())
+    switch group {
+    case .groupAccepted: // success
+        break
+    case .groupFailure, .groupRejected, .groupUnknownResult:
+        break
+    default:
+        break
+    }
+}
+```
 
 ## Author
 
