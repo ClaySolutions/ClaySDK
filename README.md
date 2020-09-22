@@ -15,8 +15,8 @@ This SDK for iOS contains the most up-to-date frameworks for integrating Mobile 
 ## Requirements
 
 * iOS 11+
-* Xcode 11.5
-* Swift 5.2
+* Xcode 12
+* Swift 5.3
 
 Apart from that, these frameworks must be included into the target project:
 
@@ -33,7 +33,7 @@ Apart from that, these frameworks must be included into the target project:
 
 First, you need to obtain a copy of the JustInMobile iOS SDK from Salto Systems. Once you have this copy, you can start using the SDK.
 
-The Virgil libraries can be found at [Virgil Security Objective-C/Swift SDK](https://github.com/VirgilSecurity/virgil-sdk-x/tree/5.7.0)
+The Virgil libraries can be found at [Virgil Security Objective-C/Swift SDK](https://github.com/VirgilSecurity/virgil-sdk-x)
 
 ### CocoaPods
 
@@ -52,10 +52,10 @@ pod 'ClaySDK', '~> 1.8'
 To install ClaySDK, simply add the following line to your Cartfile:
 
 ```ogdl
-github "ClaySolutions/ClaySDK" "1.8.0"
+github "ClaySolutions/ClaySDK" "1.8.1"
 ```
 Include framework from *Carthage/Build/iOS* folder. 
-Follow instructions for including [VirgilSDK](https://github.com/VirgilSecurity/virgil-sdk-x/tree/7.1.0#carthage)
+Follow instructions for including [VirgilSDK](https://github.com/VirgilSecurity/virgil-sdk-x#carthage)
 
 ## Usage
 
