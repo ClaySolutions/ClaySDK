@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'ClaySDK'
-  s.version          = '1.8.1'
+  s.version          = '1.8.2'
   s.summary          = 'The Clay mobile SDK make it easy to build a seamless door opening experience in your application.'
 
   s.description      = <<-DESC
@@ -24,4 +24,7 @@ Pod::Spec.new do |s|
 
   s.vendored_frameworks = 'ClaySDK.framework'
   s.dependency 'VirgilSDK', '7.2.1'
+
+  s.pod_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
+  s.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
 end

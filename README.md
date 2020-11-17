@@ -52,7 +52,7 @@ pod 'ClaySDK', '~> 1.8'
 To install ClaySDK, simply add the following line to your Cartfile:
 
 ```ogdl
-github "ClaySolutions/ClaySDK" "1.8.1"
+github "ClaySolutions/ClaySDK" "1.8.2"
 ```
 Include framework from *Carthage/Build/iOS* folder. 
 Follow instructions for including [VirgilSDK](https://github.com/VirgilSecurity/virgil-sdk-x#carthage)
