@@ -39,10 +39,10 @@
             <a href="Classes.html">Classes</a>
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
-                <a href="Classes/ClayResult.html">ClayResult</a>
+                <a href="Classes/Clay.html">Clay</a>
               </li>
               <li class="nav-group-task">
-                <a href="Classes/ClaySDK.html">ClaySDK</a>
+                <a href="Classes/ClayResult.html">ClayResult</a>
               </li>
             </ul>
           </li>
@@ -80,6 +80,35 @@
                 <li class="item">
                   <div>
                     <code>
+                    <a name="/c:@M@ClaySDK@objc(cs)Clay"></a>
+                    <a name="//apple_ref/swift/Class/Clay" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@ClaySDK@objc(cs)Clay">Clay</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The main class that handles security and Mobile Key openings</p>
+
+                        <a href="Classes/Clay.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@objc</span>
+<span class="kd">public</span> <span class="kd">class</span> <span class="kt">Clay</span> <span class="p">:</span> <span class="kt">NSObject</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
                     <a name="/c:@M@ClaySDK@objc(cs)ClayResult"></a>
                     <a name="//apple_ref/swift/Class/ClayResult" class="dashAnchor"></a>
                     <a class="token" href="#/c:@M@ClaySDK@objc(cs)ClayResult">ClayResult</a>
@@ -99,8 +128,8 @@
  <span class="c1">//...</span>
  <span class="kd">func</span> <span class="nf">didOpen</span><span class="p">(</span><span class="n">with</span> <span class="nv">result</span><span class="p">:</span> <span class="kt">ClayResult</span><span class="p">?)</span> <span class="p">{</span>
     <span class="k">guard</span> <span class="k">let</span> <span class="nv">result</span> <span class="o">=</span> <span class="n">result</span> <span class="k">else</span> <span class="p">{</span> <span class="k">return</span> <span class="p">}</span>
-    <span class="k">if</span> <span class="p">(</span><span class="n">result</span><span class="o">.</span><span class="nf">getOpResult</span><span class="p">()</span> <span class="o">==</span> <span class="kt">AUTH_SUCCESS_ACCESS_GRANTED</span><span class="p">)</span> <span class="p">{</span>
-        <span class="c1">// access granted</span>
+    <span class="k">if</span> <span class="p">(</span><span class="n">result</span><span class="o">.</span><span class="nf">getOpResult</span><span class="p">()</span> <span class="o">==</span> <span class="kt">AUTH_SUCCESS_CANCELLED_KEY</span><span class="p">)</span> <span class="p">{</span>
+        <span class="c1">// reactivate key</span>
     <span class="p">}</span>
     <span class="c1">// or by using SSOperationGrup</span>
     <span class="k">let</span> <span class="nv">group</span> <span class="o">=</span> <span class="kt">SSOpResult</span><span class="o">.</span><span class="nf">getGroup</span><span class="p">(</span><span class="n">result</span><span class="o">.</span><span class="nf">getOpResult</span><span class="p">())</span>
@@ -169,42 +198,13 @@
                     </section>
                   </div>
                 </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/c:@M@ClaySDK@objc(cs)ClaySDK"></a>
-                    <a name="//apple_ref/swift/Class/ClaySDK" class="dashAnchor"></a>
-                    <a class="token" href="#/c:@M@ClaySDK@objc(cs)ClaySDK">ClaySDK</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>The main class that handles security and Mobile Key openings</p>
-
-                        <a href="Classes/ClaySDK.html" class="slightly-smaller">See more</a>
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">@objc</span>
-<span class="kd">public</span> <span class="kd">class</span> <span class="kt">ClaySDK</span> <span class="p">:</span> <span class="kt">NSObject</span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
               </ul>
             </div>
           </section>
         </section>
         <section id="footer">
-          <p>&copy; 2020 <a class="link" href="" target="_blank" rel="external"></a>. All rights reserved. (Last updated: 2020-07-09)</p>
-          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.5</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+          <p>&copy; 2021 <a class="link" href="" target="_blank" rel="external"></a>. All rights reserved. (Last updated: 2021-02-19)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.6</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
         </section>
       </article>
     </div>
