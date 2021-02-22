@@ -34,7 +34,10 @@ All notable changes to ClaySDK will be documented in this file.
 ### [1.8.2](https://github.com/ClaySolutions/ClaySDK/releases/tag/1.8.2)
 <!-- Released on 2020-11-17. -->
 
+### [1.9.0](https://github.com/ClaySolutions/ClaySDK/releases/tag/1.9.0)
+<!-- Released on 2021-02-22. -->
+
 * Support for [CocoaPods](https://cocoapods.org/) 
 * Support for [Carthage](https://github.com/Carthage/Carthage)
 
-[Salto KS]: https://my-clay.com/
+[Salto KS]: https://saltoks.com/

@@ -8,6 +8,25 @@
 
 By [Salto KS](https://saltoks.com/).
 
+## Breaking changes with version 1.9.0
+Because of the bug with Swift module interfaces (https://bugs.swift.org/browse/SR-14195) we had to change name of our main public class. Class was renamed from ClaySDK to Clay.
+Before you had:
+```swift
+import ClaySDK
+//...
+let clay = ClaySDK(installationUID: "SOME_UNIQUE_ID", apiKey: "THE_API_PUBLIC_KEY", delegate: self)
+```
+this will change to:
+```swift
+import ClaySDK
+//...
+let clay = Clay(installationUID: "SOME_UNIQUE_ID", apiKey: "THE_API_PUBLIC_KEY", delegate: self)
+```
+If you have troubles with this change in sense that new class name is not detected by Xcode clean project, reinstall pods and restart Xcode.
+
+We also changed framework to different format type. Before it was .framework and now we adopted new format .xcframework.
+Bitcode enabled projects should be supported now.
+
 ## Introduction
 
 This SDK for iOS contains the most up-to-date frameworks for integrating Mobile Key technology into your own iOS applications. It will setup the necessary security to communicate with Connect API, and unlock locks with encrypted Mobile Keys returned by the Connect API. The SDK for iOS includes iOS libraries, developer documentation and a sample Xcode project to get you up and running quickly and easily.
@@ -42,20 +61,8 @@ The Virgil libraries can be found at [Virgil Security Objective-C/Swift SDK](htt
 To install ClaySDK, simply add the following line to your Podfile:
 
 ```ruby
-pod 'ClaySDK', '~> 1.8'
+pod 'ClaySDK', '~> 1.9'
 ```
-
-### Carthage
-
-[Carthage](https://github.com/Carthage/Carthage) is a simple, decentralized dependency manager for Cocoa.
-
-To install ClaySDK, simply add the following line to your Cartfile:
-
-```ogdl
-github "ClaySolutions/ClaySDK" "1.8.2"
-```
-Include framework from *Carthage/Build/iOS* folder. 
-Follow instructions for including [VirgilSDK](https://github.com/VirgilSecurity/virgil-sdk-x#carthage)
 
 ## Usage
 
@@ -72,20 +79,19 @@ let publicKey = clay.getPublicKey()
 clay.openDoor(with: "your-encrypted-key", delegate: yourOpenDoorDelegate)
 ```
 Inside OpenDoorDelegate implementation ClayResult can be handled
-```
+```swift
 import SaltoJustINMobileSDK
 //...
 func didOpen(with result: ClayResult?) {
     guard let result = result else { return }
-    if (result.getOpResult() == AUTH_SUCCESS_ACCESS_GRANTED) {
-        // access granted
-    }
-    // or by using SSOperationGrup
+    // by using SSOperationGrup
     let group = SSOpResult.getGroup(result.getOpResult())
     switch group {
-    case .groupAccepted: // success
+    case .groupAccepted: 
+        // key sucessfully sent to lock (we don't know if user have access, access is indicated by light of the lock)
         break
     case .groupFailure, .groupRejected, .groupUnknownResult:
+        // there was a problem with sending key to the lock
         break
     default:
         break
