@@ -1,5 +1,5 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.3.2 (swiftlang-1200.0.45 clang-1200.0.32.28)
+// swift-compiler-version: Apple Swift version 5.4 (swiftlang-1205.0.26.9 clang-1205.0.19.55)
 // swift-module-flags: -target arm64-apple-ios11.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name ClaySDK
 @_exported import ClaySDK
 import Foundation
@@ -11,8 +11,8 @@ import VirgilCrypto
   @objc public func getPublicKey() -> Swift.String
   @objc public func reloadKeys() -> Swift.Bool
   @objc public func openDoor(with key: Swift.String, delegate: ClaySDK.OpenDoorDelegate)
-  @objc deinit
   @objc override dynamic public init()
+  @objc deinit
 }
 public enum ClayError : Swift.Error {
   case invalidApiKey
@@ -25,10 +25,10 @@ public enum ClayError : Swift.Error {
   case storeLoadError
   case internalError
   public static func == (a: ClaySDK.ClayError, b: ClaySDK.ClayError) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
   public var hashValue: Swift.Int {
     get
   }
-  public func hash(into hasher: inout Swift.Hasher)
 }
 extension ClayError : Foundation.LocalizedError {
   public var errorDescription: Swift.String? {
@@ -41,7 +41,7 @@ extension ClayError : Foundation.LocalizedError {
   @objc override dynamic public init()
   @objc deinit
 }
-@objc public protocol ClayDelegate : AnyObject {
+@objc public protocol ClayDelegate {
   @objc func didReceive(error: Swift.Error)
 }
 @objc public protocol OpenDoorDelegate : ClaySDK.ClayDelegate {
