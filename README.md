@@ -105,4 +105,4 @@ func didOpen(with result: ClayResult?) {
 
 # Changelog
 
-See [CHANGELOG](CHANGELOG.md).
+See [CHANGELOG](https://github.com/ClaySolutions/ClaySDK/blob/master/CHANGELOG.md).
