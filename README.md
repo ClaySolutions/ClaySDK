@@ -34,8 +34,6 @@ This SDK for iOS contains the most up-to-date frameworks for integrating Mobile 
 ## Requirements
 
 * iOS 11+
-* Xcode 12
-* Swift 5.3
 
 Apart from that, these frameworks must be included into the target project:
 
@@ -61,7 +59,7 @@ The Virgil libraries can be found at [Virgil Security Objective-C/Swift SDK](htt
 To install ClaySDK, simply add the following line to your Podfile:
 
 ```ruby
-pod 'ClaySDK', '~> 1.9'
+pod 'ClaySDK', '~> 1.10'
 ```
 
 ## Usage

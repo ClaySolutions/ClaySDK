@@ -1,16 +1,15 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.4 (swiftlang-1205.0.26.9 clang-1205.0.19.55)
+// swift-compiler-version: Apple Swift version 5.5.2 (swiftlang-1300.0.47.5 clang-1300.0.29.30)
 // swift-module-flags: -target arm64-apple-ios11.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name ClaySDK
 @_exported import ClaySDK
 import Foundation
 import SaltoJustINMobileSDK
 import Swift
 import VirgilCrypto
-@_hasMissingDesignatedInitializers @objc public class Clay : ObjectiveC.NSObject {
-  @objc convenience public init(installationUID: Swift.String, apiKey: Swift.String, delegate: ClaySDK.ClayDelegate)
-  @objc public func getPublicKey() -> Swift.String
-  @objc public func reloadKeys() -> Swift.Bool
-  @objc public func openDoor(with key: Swift.String, delegate: ClaySDK.OpenDoorDelegate)
+import _Concurrency
+@_inheritsConvenienceInitializers @objc public class ClayResult : SaltoJustINMobileSDK.SSResult {
+  @objc override dynamic public func getOpResult() -> Swift.Int
+  @objc override dynamic public init?(opResult: Swift.Int, auditTrailEvents events: Swift.String?)
   @objc override dynamic public init()
   @objc deinit
 }
@@ -30,15 +29,16 @@ public enum ClayError : Swift.Error {
     get
   }
 }
-extension ClayError : Foundation.LocalizedError {
+extension ClaySDK.ClayError : Foundation.LocalizedError {
   public var errorDescription: Swift.String? {
     get
   }
 }
-@_inheritsConvenienceInitializers @objc public class ClayResult : SaltoJustINMobileSDK.SSResult {
-  @objc override dynamic public func getOpResult() -> Swift.Int
-  @objc override dynamic public init?(opResult: Swift.Int, auditTrailEvents events: Swift.String?)
-  @objc override dynamic public init()
+@_hasMissingDesignatedInitializers @objc public class Clay : ObjectiveC.NSObject {
+  @objc convenience public init(installationUID: Swift.String, apiKey: Swift.String, delegate: ClaySDK.ClayDelegate)
+  @objc public func getPublicKey() -> Swift.String
+  @objc public func reloadKeys() -> Swift.Bool
+  @objc public func openDoor(with key: Swift.String, delegate: ClaySDK.OpenDoorDelegate)
   @objc deinit
 }
 @objc public protocol ClayDelegate {
