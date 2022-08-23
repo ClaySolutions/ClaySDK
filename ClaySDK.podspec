@@ -20,8 +20,7 @@ Pod::Spec.new do |s|
   s.author           = { 'Jakov' => 'jakov@my-clay.com' , 'Victor' => 'victor@my-clay.com'}
   s.source           = { :git => 'https://github.com/ClaySolutions/ClaySDK.git', :tag => s.version.to_s }
   s.swift_version = '5.4'
-  s.ios.deployment_target = '11'
 
   s.vendored_frameworks = 'ClaySDK.xcframework'
-  s.dependency 'VirgilSDK', '8.0.0'
+  s.dependency 'VirgilSDK', '8.1.0'
 end
