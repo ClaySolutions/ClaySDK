@@ -6,7 +6,7 @@
 	<dict>
 		<key>Headers/ClaySDK-Swift.h</key>
 		<data>
-		UMgmbQaXONliYkHjpS6ad9/PtOM=
+		F4p6pGkawGzu4stKj0NPfP7UBeA=
 		</data>
 		<key>Headers/ClaySDK.h</key>
 		<data>
@@ -14,55 +14,31 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		g/743VMzf0yDqfammdIjEhaWtpw=
+		+a4hbfAatt0vOpWUVkm6tCxPnlU=
 		</data>
 		<key>Modules/ClaySDK.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		kn1hNGZsaYSNaXjHMD1Z6XJx9a0=
+		EQLN3kKwSsXSofisXC/wqXzCJ3M=
 		</data>
 		<key>Modules/ClaySDK.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		LUmr5WWE/FEuaZWufBTrWAL7Vgw=
+		2ZSKpzCiIyNzsU0ZVLBmzUpklik=
 		</data>
 		<key>Modules/ClaySDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		3j4i7hGi5+59ByuGBzYnldVGoms=
-		</data>
-		<key>Modules/ClaySDK.swiftmodule/arm64.swiftdoc</key>
-		<data>
-		kn1hNGZsaYSNaXjHMD1Z6XJx9a0=
-		</data>
-		<key>Modules/ClaySDK.swiftmodule/arm64.swiftinterface</key>
-		<data>
-		LUmr5WWE/FEuaZWufBTrWAL7Vgw=
-		</data>
-		<key>Modules/ClaySDK.swiftmodule/arm64.swiftmodule</key>
-		<data>
-		3j4i7hGi5+59ByuGBzYnldVGoms=
+		jhdaWHV8ElL/4snMEJP5k4/7xgk=
 		</data>
 		<key>Modules/ClaySDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		sec/lYx5lsxN4h4ZplfF29tiJXo=
+		Wpehg7MeIpDyMI1aCKNM7XqadsY=
 		</data>
 		<key>Modules/ClaySDK.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		dKTNA3JS2FhpGKQXvLQ8FeQVNyU=
+		7Gl0iAhPEDR6bhn+uAISggggjW8=
 		</data>
 		<key>Modules/ClaySDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		6RzeM9h0SMl6o4pWQ9a3/00lxlE=
-		</data>
-		<key>Modules/ClaySDK.swiftmodule/x86_64.swiftdoc</key>
-		<data>
-		sec/lYx5lsxN4h4ZplfF29tiJXo=
-		</data>
-		<key>Modules/ClaySDK.swiftmodule/x86_64.swiftinterface</key>
-		<data>
-		dKTNA3JS2FhpGKQXvLQ8FeQVNyU=
-		</data>
-		<key>Modules/ClaySDK.swiftmodule/x86_64.swiftmodule</key>
-		<data>
-		6RzeM9h0SMl6o4pWQ9a3/00lxlE=
+		jSwYuBHEEjyVH9vQGka+OU6vMcc=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -75,7 +51,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			WqfQQRaa2tgCzPEZFiXe2k5ciValOAIVZVstV5Jal9g=
+			lusFHvYGb8wXkw3JqUSdCDhVKA88HOeplwfqFPuRMVQ=
 			</data>
 		</dict>
 		<key>Headers/ClaySDK.h</key>
@@ -89,84 +65,42 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			UuYSGjzXYnTcV+X3vEcvPdXgl/oFY8a4aATfQljiK3A=
+			/RP1KMoTWXjv8Y/3BbxEuVBsVP7um9PNQZ9J1O1kh/0=
 			</data>
 		</dict>
 		<key>Modules/ClaySDK.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			D66b7MGu6xWeXu3sinqLCyyttiM8gngHRk3N52dTyFI=
+			EZWwE7+IXrSy5IeGVmy15JJ8l0i+6unfDFrC4JMNFJ4=
 			</data>
 		</dict>
 		<key>Modules/ClaySDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Le0M4X3IWGzBdcPg43rBYcNu0hGxXsJGuwhWKIGGKGc=
-			</data>
-		</dict>
-		<key>Modules/ClaySDK.swiftmodule/arm64.swiftdoc</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			UuYSGjzXYnTcV+X3vEcvPdXgl/oFY8a4aATfQljiK3A=
-			</data>
-		</dict>
-		<key>Modules/ClaySDK.swiftmodule/arm64.swiftinterface</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			D66b7MGu6xWeXu3sinqLCyyttiM8gngHRk3N52dTyFI=
-			</data>
-		</dict>
-		<key>Modules/ClaySDK.swiftmodule/arm64.swiftmodule</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			Le0M4X3IWGzBdcPg43rBYcNu0hGxXsJGuwhWKIGGKGc=
+			THQwWO/6NmegfKv9j9xkweixXBfbVQefj0HHMWG56PU=
 			</data>
 		</dict>
 		<key>Modules/ClaySDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			ugGIyozRZvYVwL0O1Jy8oHbhZDNpanWIAdYqCnQw9Ww=
+			LsnPs45JK7fTosDJITXjUU8x/LI/OhwrLP66FHDh8IE=
 			</data>
 		</dict>
 		<key>Modules/ClaySDK.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			zAc1V9PMpexsP868ttn2BYSlSj3sQuh7dJV8nxLKl5Y=
+			fHaJvu5osCWmusrs4CoKnpYmcZnOfSyflZza0Q2PC50=
 			</data>
 		</dict>
 		<key>Modules/ClaySDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			1r+hFNSyAUo05Ht8WRPnCFOJ4O5bydZeiA/UXzBGjTs=
-			</data>
-		</dict>
-		<key>Modules/ClaySDK.swiftmodule/x86_64.swiftdoc</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			ugGIyozRZvYVwL0O1Jy8oHbhZDNpanWIAdYqCnQw9Ww=
-			</data>
-		</dict>
-		<key>Modules/ClaySDK.swiftmodule/x86_64.swiftinterface</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			zAc1V9PMpexsP868ttn2BYSlSj3sQuh7dJV8nxLKl5Y=
-			</data>
-		</dict>
-		<key>Modules/ClaySDK.swiftmodule/x86_64.swiftmodule</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			1r+hFNSyAUo05Ht8WRPnCFOJ4O5bydZeiA/UXzBGjTs=
+			SpT1WiJcAFLXXLKmfIexOefzSaVa8E2ClA1SJaHN5o0=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
