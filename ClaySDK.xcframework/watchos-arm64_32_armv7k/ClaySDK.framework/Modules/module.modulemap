@@ -1,0 +1,11 @@
+framework module ClaySDK {
+  umbrella header "ClaySDK.h"
+
+  export *
+  module * { export * }
+}
+
+module ClaySDK.Swift {
+    header "ClaySDK-Swift.h"
+    requires objc
+}

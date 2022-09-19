@@ -1,0 +1,55 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.6.1 (swiftlang-5.6.0.323.66 clang-1316.0.20.12)
+// swift-module-flags: -target armv7k-apple-watchos7.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name ClaySDK
+@_exported import ClaySDK
+import Foundation
+import SaltoJustINMobileSDK
+import Swift
+import VirgilCrypto
+import _Concurrency
+@objc public protocol ClayDelegate {
+  @objc func didReceive(error: Swift.Error)
+}
+@objc public protocol OpenDoorDelegate : ClaySDK.ClayDelegate {
+  @objc func didFindLock()
+  @objc func didOpen(with result: ClaySDK.ClayResult?)
+  @objc func didReceiveTimeout()
+  @objc func alreadyRunning()
+  @objc func didReceiveBLE(error: Swift.Error)
+}
+public enum ClayError : Swift.Error {
+  case invalidApiKey
+  case invalidBase64
+  case invalidMKey
+  case invalidMKeyFormat
+  case invalidMKeySignature
+  case invalidMKeyEncryption
+  case storeError
+  case storeLoadError
+  case internalError
+  public static func == (a: ClaySDK.ClayError, b: ClaySDK.ClayError) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+extension ClaySDK.ClayError : Foundation.LocalizedError {
+  public var errorDescription: Swift.String? {
+    get
+  }
+}
+@_hasMissingDesignatedInitializers @objc public class Clay : ObjectiveC.NSObject {
+  @objc convenience public init(installationUID: Swift.String, apiKey: Swift.String, delegate: ClaySDK.ClayDelegate)
+  @objc public func getPublicKey() -> Swift.String
+  @objc public func reloadKeys() -> Swift.Bool
+  @objc public func openDoor(with key: Swift.String, delegate: ClaySDK.OpenDoorDelegate)
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @objc public class ClayResult : SaltoJustINMobileSDK.SSResult {
+  @objc override dynamic public func getOpResult() -> Swift.Int
+  @objc override dynamic public init?(opResult: Swift.Int, auditTrailEvents events: Swift.String?)
+  @objc override dynamic public init()
+  @objc deinit
+}
+extension ClaySDK.ClayError : Swift.Equatable {}
+extension ClaySDK.ClayError : Swift.Hashable {}

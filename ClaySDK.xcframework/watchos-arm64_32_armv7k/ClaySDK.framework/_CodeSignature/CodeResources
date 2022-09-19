@@ -6,7 +6,7 @@
 	<dict>
 		<key>Headers/ClaySDK-Swift.h</key>
 		<data>
-		F4p6pGkawGzu4stKj0NPfP7UBeA=
+		9bf9PNY8Q3X61qQbCxxANrBBhxg=
 		</data>
 		<key>Headers/ClaySDK.h</key>
 		<data>
@@ -14,31 +14,31 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		yyIVyL5A8wTJxh+V3F0efuTtu6Y=
+		pSIW2tfpcwRQJ+9YU/GqEf+PVHM=
 		</data>
-		<key>Modules/ClaySDK.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
+		<key>Modules/ClaySDK.swiftmodule/arm64_32-apple-watchos.swiftdoc</key>
 		<data>
-		EQLN3kKwSsXSofisXC/wqXzCJ3M=
+		EouO00GS+fqoGBxorFGDKewJ0FI=
 		</data>
-		<key>Modules/ClaySDK.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
+		<key>Modules/ClaySDK.swiftmodule/arm64_32-apple-watchos.swiftinterface</key>
 		<data>
-		2ZSKpzCiIyNzsU0ZVLBmzUpklik=
+		TaonQTQI11mijE+08EZwh5wIyxE=
 		</data>
-		<key>Modules/ClaySDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
+		<key>Modules/ClaySDK.swiftmodule/arm64_32-apple-watchos.swiftmodule</key>
 		<data>
-		QhBm5sMYMxmXIG9REhA5JANOL3o=
+		GJYoCtAIc+b3Hp6YCwkhgPVmrJQ=
 		</data>
-		<key>Modules/ClaySDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
+		<key>Modules/ClaySDK.swiftmodule/armv7k-apple-watchos.swiftdoc</key>
 		<data>
-		Wpehg7MeIpDyMI1aCKNM7XqadsY=
+		aryXg7NVJf05a+eMFQkm6vlb8AI=
 		</data>
-		<key>Modules/ClaySDK.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
+		<key>Modules/ClaySDK.swiftmodule/armv7k-apple-watchos.swiftinterface</key>
 		<data>
-		7Gl0iAhPEDR6bhn+uAISggggjW8=
+		cJswfWIk5C405XBNo73RWDbqsCs=
 		</data>
-		<key>Modules/ClaySDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
+		<key>Modules/ClaySDK.swiftmodule/armv7k-apple-watchos.swiftmodule</key>
 		<data>
-		gW6E2iji+eFqNP3TZQ9ok93jftU=
+		Byo61hlkpyRuTsYIz64cNNp7koM=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -49,62 +49,98 @@
 	<dict>
 		<key>Headers/ClaySDK-Swift.h</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			9bf9PNY8Q3X61qQbCxxANrBBhxg=
+			</data>
 			<key>hash2</key>
 			<data>
-			lusFHvYGb8wXkw3JqUSdCDhVKA88HOeplwfqFPuRMVQ=
+			uMoz/2SQgfZ2eLoajF6Dl39lMVloUj9XYOHaCdZVGmU=
 			</data>
 		</dict>
 		<key>Headers/ClaySDK.h</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			fCHPyGS6nhZANgkvOKxogWyUK9A=
+			</data>
 			<key>hash2</key>
 			<data>
 			/NsYVGLZeibCpHdjR04JWkB65zMh/flj6G/LsrSKjQ4=
 			</data>
 		</dict>
-		<key>Modules/ClaySDK.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
+		<key>Modules/ClaySDK.swiftmodule/arm64_32-apple-watchos.swiftdoc</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			EouO00GS+fqoGBxorFGDKewJ0FI=
+			</data>
 			<key>hash2</key>
 			<data>
-			/RP1KMoTWXjv8Y/3BbxEuVBsVP7um9PNQZ9J1O1kh/0=
+			LOKHaL1AtDB754mUgHnNkPeY67KiEAqXOZnjsBnMAbc=
 			</data>
 		</dict>
-		<key>Modules/ClaySDK.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
+		<key>Modules/ClaySDK.swiftmodule/arm64_32-apple-watchos.swiftinterface</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			TaonQTQI11mijE+08EZwh5wIyxE=
+			</data>
 			<key>hash2</key>
 			<data>
-			EZWwE7+IXrSy5IeGVmy15JJ8l0i+6unfDFrC4JMNFJ4=
+			/WP34608Iyb3YMENwKUazJv5yph4mQenvfRzvaq7BeM=
 			</data>
 		</dict>
-		<key>Modules/ClaySDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
+		<key>Modules/ClaySDK.swiftmodule/arm64_32-apple-watchos.swiftmodule</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			GJYoCtAIc+b3Hp6YCwkhgPVmrJQ=
+			</data>
 			<key>hash2</key>
 			<data>
-			nQi/p6HqNDqkKFhWh/8CjsQ5Hyzt5JbwKBCWr8iF12M=
+			VRGHGlNcopF99nz2KmRj78vZzQJskHL10oUld5sboT0=
 			</data>
 		</dict>
-		<key>Modules/ClaySDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
+		<key>Modules/ClaySDK.swiftmodule/armv7k-apple-watchos.swiftdoc</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			aryXg7NVJf05a+eMFQkm6vlb8AI=
+			</data>
 			<key>hash2</key>
 			<data>
-			LsnPs45JK7fTosDJITXjUU8x/LI/OhwrLP66FHDh8IE=
+			f0cLXFoeN3dAkBgzgnDFme46cprEWUzwDqyivXy7k90=
 			</data>
 		</dict>
-		<key>Modules/ClaySDK.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
+		<key>Modules/ClaySDK.swiftmodule/armv7k-apple-watchos.swiftinterface</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			cJswfWIk5C405XBNo73RWDbqsCs=
+			</data>
 			<key>hash2</key>
 			<data>
-			fHaJvu5osCWmusrs4CoKnpYmcZnOfSyflZza0Q2PC50=
+			Nueo47LLDmzovsVRlwA1QhdIVPcZMETtRh0Skn3xz0I=
 			</data>
 		</dict>
-		<key>Modules/ClaySDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
+		<key>Modules/ClaySDK.swiftmodule/armv7k-apple-watchos.swiftmodule</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			Byo61hlkpyRuTsYIz64cNNp7koM=
+			</data>
 			<key>hash2</key>
 			<data>
-			lDB2DUkxeqnSjUU6TK9smjcSvywGPMqJOeFeTnKrMAU=
+			ysmqkoX7Wugt/lROFyFxcgHoyP3vw1s1x6ztwyi2KJo=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			DG6xvS+nZ6SrTYrQaohj0o28FMA=
+			</data>
 			<key>hash2</key>
 			<data>
 			ecW3Fg2N+KxSIZWft6QkOaHF93ZTIzCwP0GEKtXeWMs=

@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'ClaySDK'
-  s.version          = '1.10.1'
+  s.version          = '1.11.0'
   s.summary          = 'The Clay mobile SDK make it easy to build a seamless door opening experience in your application.'
 
   s.description      = <<-DESC
@@ -19,8 +19,9 @@ Pod::Spec.new do |s|
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'Jakov' => 'jakov@my-clay.com' , 'Victor' => 'victor@my-clay.com'}
   s.source           = { :git => 'https://github.com/ClaySolutions/ClaySDK.git', :tag => s.version.to_s }
-  s.swift_version = '5.4'
+  s.swift_version = '5.6.1'
   s.ios.deployment_target = '11'
+  s.watchos.deployment_target = '7.0'
 
   s.vendored_frameworks = 'ClaySDK.xcframework'
   s.dependency 'VirgilSDK', '8.1.0'
