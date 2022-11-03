@@ -6,6 +6,6 @@ framework module ClaySDK {
 }
 
 module ClaySDK.Swift {
-    header "ClaySDK-Swift.h"
-    requires objc
+  header "ClaySDK-Swift.h"
+  requires objc
 }

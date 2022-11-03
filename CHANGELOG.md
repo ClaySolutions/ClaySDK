@@ -46,6 +46,9 @@ All notable changes to ClaySDK will be documented in this file.
 ### [1.10.0](https://github.com/ClaySolutions/ClaySDK/releases/tag/1.11.0)
 <!-- Released on 2022-09-19. -->
 
+### [1.10.1](https://github.com/ClaySolutions/ClaySDK/releases/tag/1.11.1)
+<!-- Released on 2022-09-19. -->
+
 * Support for [CocoaPods](https://cocoapods.org/) 
 * Support for [Carthage](https://github.com/Carthage/Carthage)
 
