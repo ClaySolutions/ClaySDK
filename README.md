@@ -8,24 +8,8 @@
 
 By [Salto KS](https://saltoks.com/).
 
-## Breaking changes with version 1.9.0
-Because of the bug with Swift module interfaces (https://bugs.swift.org/browse/SR-14195) we had to change name of our main public class. Class was renamed from ClaySDK to Clay.
-Before you had:
-```swift
-import ClaySDK
-//...
-let clay = ClaySDK(installationUID: "SOME_UNIQUE_ID", apiKey: "THE_API_PUBLIC_KEY", delegate: self)
-```
-this will change to:
-```swift
-import ClaySDK
-//...
-let clay = Clay(installationUID: "SOME_UNIQUE_ID", apiKey: "THE_API_PUBLIC_KEY", delegate: self)
-```
-If you have troubles with this change in sense that new class name is not detected by Xcode clean project, reinstall pods and restart Xcode.
-
-We also changed framework to different format type. Before it was .framework and now we adopted new format .xcframework.
-Bitcode enabled projects should be supported now.
+# Move to Gitlab
+This repository is deprecated. Distribution of ClaySDK moved to Gitlab and requires authentication. Please contact SaltoKS support for more information.
 
 ## Introduction
 
