@@ -10,6 +10,7 @@ By [Salto KS](https://saltoks.com/).
 
 # Move to Gitlab
 ### This repository is deprecated. Distribution of ClaySDK moved to Gitlab and requires authentication. Please contact SaltoKS support for more information on how to migrate.
+#### Docs can be found here: https://gitlab.com/claysolutions/public/clay-sdk/-/wikis/Home
 
 ## Introduction
 
